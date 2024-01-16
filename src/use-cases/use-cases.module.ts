@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { LangChainModule } from '../domain/lang-chain/lang-chain.module';
-import { ProcessTextUseCase } from './text-processing/process-text-use-case.service';
+import { ProcessTextUseCase } from './text-processing/./process-text.use-case';
 
 const USE_CASES = [ProcessTextUseCase];
 
