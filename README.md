@@ -19,7 +19,7 @@ At this moment there are three folders which contain parts of application, each 
 - [use-cases](./src/use-cases) - contains "use case" classes which inject services and proceed complex logic which (
   potentially) involves multiple entities from `domain` folder. Use cases are used to avoid mixing services with each
   other.
-- [http-api](./src/http-api) - contains HTTP controllers. Controllers are injected with use cases. Direct access to
+- [http-api](./src/http-api) - contains HTTP controllers. Controllers inject use cases. Direct access to
   entities is not recommended but not forbidden. Ideally each endpoint should execute one use case and return result of
   this execution. Why not put controllers next to the services and repos? Because controllers has nothing to do with
   entities. It's a different layer of application. Also, later there may be some other form of API we'll need to add or
