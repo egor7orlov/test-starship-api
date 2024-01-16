@@ -1,4 +1,4 @@
-import { ProcessTextUseCase } from '../use-cases/text-processing/./process-text.use-case';
+import { ProcessTextUseCase } from '../use-cases/text-processing/process-text.use-case';
 import { Body, Controller, HttpCode, Post } from '@nestjs/common';
 import { ProcessTextInputDto } from './dto/process-text-input.dto';
 

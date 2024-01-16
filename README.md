@@ -13,6 +13,10 @@ npm run test:e2e
 
 ## Description
 
+I've implemented text processing next way: I iterate over words of text and check if word is a keyword. There are
+predefined answers for each keyword. If there are more than one keyword in text those answers a joined by 2 newline
+characters ("\n\n").
+
 At this moment there are three folders which contain parts of application, each of which has its own concerns:
 
 - [domain](./src/domain) - contains everything related to work with certain entities (services, repositories, etc.)
