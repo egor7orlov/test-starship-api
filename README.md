@@ -21,7 +21,7 @@ At this moment there are three folders which contain parts of application, each 
 - [http-api](./src/http-api) - contains HTTP controllers. Controllers are injected with use cases. Direct access to
   entities is not recommended but not forbidden. Ideally each endpoint should execute one use case and return result of
   this execution. Why not put controllers next to the services and repos? Because controllers has nothing to do with
-  entities. It's a different layer of application. Also, later there may be some other form of API we need to add or
+  entities. It's a different layer of application. Also, later there may be some other form of API we'll need to add or
   switch to. We'll put it in another API-related folder (e.g. `aws-lambda-handlers`, `message-listeners`, etc.).
 
 During development, I kept in mind an idea
