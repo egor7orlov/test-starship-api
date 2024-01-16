@@ -16,8 +16,9 @@ npm run test:e2e
 At this moment there are three folders which contain parts of application, each of which has its own concerns:
 
 - [domain](./src/domain) - contains everything related to work with certain entities (services, repositories, etc.)
-- [use-cases](./src/use-cases) - contains use cases classes which inject services and proceed complex logic which (
-  potentially) involves multiple entities from `domain` folder.
+- [use-cases](./src/use-cases) - contains "use case" classes which inject services and proceed complex logic which (
+  potentially) involves multiple entities from `domain` folder. Use cases are used to avoid mixing services with each
+  other.
 - [http-api](./src/http-api) - contains HTTP controllers. Controllers are injected with use cases. Direct access to
   entities is not recommended but not forbidden. Ideally each endpoint should execute one use case and return result of
   this execution. Why not put controllers next to the services and repos? Because controllers has nothing to do with
