@@ -25,7 +25,7 @@ export const keywordToAnswer: Record<string, string> = {
 @Injectable()
 export class LangChainService {
   public processText({ text }: { text: string }): string {
-    const words = text.toLowerCase().split(/\s+/);
+    const words = text.toLowerCase().split(/[.,:;!]?\s+/);
     let compositeAnswer = '';
 
     for (const word of words) {

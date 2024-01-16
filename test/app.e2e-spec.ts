@@ -73,4 +73,16 @@ describe('RootController (e2e)', () => {
       answer: keywordToAnswer.mars,
     });
   });
+
+  it('/process-text (POST); should answer when multiple keywords are detected (with punctuation)', async () => {
+    const body = { text: 'Launch: to; Mars, baby!' };
+    const response = await request(app.getHttpServer())
+      .post('/process-text')
+      .send(body);
+
+    expect(response.statusCode).toEqual(200);
+    expect(response.body).toStrictEqual({
+      answer: keywordToAnswer.launch + '\n\n' + keywordToAnswer.mars,
+    });
+  });
 });
