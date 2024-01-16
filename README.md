@@ -7,7 +7,7 @@ npm install
 
 npm run start
 
-# There are also e2e tests  in `test` folder
+# There are also e2e tests in `test` folder
 npm run test:e2e
 ```
 
@@ -26,7 +26,8 @@ At this moment there are three folders which contain parts of application, each 
 
 During development, I kept in mind an idea
 of [clean architecture](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0u-ekVHFu7Om7Z-VTwFHvg.png) in mind
-with its layers of application.
+with its layers of application. I have to say that in some cases such structure is probably an overkill but in most
+cases it was perfect in terms of development experience.
 
 ## LangChain integration
 
