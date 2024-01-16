@@ -24,7 +24,9 @@ At this moment there are three folders which contain parts of application, each 
   entities. It's a different layer of application. Also, later there may be some other form of API we need to add or
   switch to. We'll put it in another API-related folder (e.g. `aws-lambda-handlers`, `message-listeners`, etc.).
 
-During development, I kept idea of clean architecture in mind with its layers of application.
+During development, I kept in mind an idea
+of [clean architecture](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*0u-ekVHFu7Om7Z-VTwFHvg.png) in mind
+with its layers of application.
 
 ## LangChain integration
 
